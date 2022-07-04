@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../CSS/styleParent.css">
+    <link rel="stylesheet" href="../CSS/styleWritings.css">
+    <link rel="stylesheet" href="../CSS/styleConsole.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&family=Press+Start+2P&family=Roboto:ital,wght@0,400;1,100&family=Sora:wght@500&family=VT323&display=swap" rel="stylesheet"> 
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4eebd97972.js" crossorigin="anonymous"></script>
+
+    <script src="js/javaScript.js"></script>
+</head>
+
+<body>
+    <header>
+      
+        <nav>
+            <h1> <div id="output">Bots</div></h1>
+
+            <input type="checkbox" id ="check">
+            <label for="check" class="burgerButton"> <i class="fa-solid fa-bars"></i></label>
+            <ul>
+                <li>
+                    <button class="navBtn u-link navBtnConsole" onclick="displayConsole()" >Console</button>
+                    <a href="../index.html" class="navBtn">Home</a>
+                    <a href="projects.html" class="navBtn">Portfolio</a>
+                    <div class="dropdown">
+                        <a href="blog.html" class="navBtn dropbtn">Blog</a>
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="bots.html">Bots</a>
+                          <a href="browser.html">Browser</a>
+                          <a href="hypertext.html">Hypertext</a>
+                          <a href="justiceDesign.html">Justice in Design</a>
+                          <a href="uiux.html"> Analysis on UI UX</a>
+                          <a href="reflection.html">Reflection</a>
+                          <a href="geographies.html">Information access geographies</a>
+                        </div>
+                    <a href="designJurnal.html"class="navBtn">Design</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article class="h-entry">
+        <h2 class="p-name">Critical reflection</h2>
+        <p class="e-content"> 
+          <h3>Reflection</h3> 
+ 
+          <br>
+          <h3>What did I want to achieve?</h3>
+          <br><br>
+          I wanted to create a website that sells me as a technical game developer. 
+          What means did I use to achieve this?
+          These decisions can be read in my design journal, but to surmise them:
+          Created a pallet to support modern technological themes.
+          Selected a font to indicate a game dev theme.
+          Used binary effect to further sell the idea that coding is what I will primarily do in jobs. 
+          <br><br>
+          The newest addition towards this goal is the custom terminal. The custom terminal is based on the terminal used in Windows and Linux. Information and software engineers often use this tool as it gives more control when navigating these operating systems. I wanted to simulate this feeling and tool in my own website. 
+          The one I have in my website is more of a technical prototype. This will be changed later to make it look closer to the windows command prompt( e.g. adding a flashing underscore and getting the layout as close to the windows cmd). 
+          I also would like to keep its colour scheme close to the website to convey as if the website is an ‘OS’. This would also keep the colour scheme consistent.
+          <br><br>
+          <h3> Improvements made on the website</h3>
+         
+          Adding micro formatting to help the web-crawlers was a daunting task, but I theoretically understand their importance to the website. 
+          Adding the drop down box to the block navigation button helps moving between blogs greatly, currently it only activates when the user selects a blog to read. This is so that the user is force to first navigate to the summaries page. I did this to better guide the user, but restraining the user can feel restrictive. 
+          It also ensures that the user knows that the blog button not only displays a drop down but is clickable, only displaying the drop down when in the blogs ensures the user knows this. 
+          To improve this I must use UX to better infer to the user that the button is not only a drop down box but can be clicked.
+          <br><br>
+          <h3> What did I do wrong? And how will I improve?</h3>
+         <br>
+          <h4>UI UX</h4>
+          
+          The UI and UX have not been through rigorous testing yet. Even though I have learned a lot from the lectures whether my website resonates with the target audience is not researched enough.  Going forward I will need to ask more faculty members and peers to test the project and give feedback. Creating quizzes and rating systems will help capture data and make conclusions as to what must be changed on the website.
+          <br>
+          I had read the UI and UX documents, but attempting to implement them and rationalise/reason why I was is another story. This is something that I struggle with in my design. Putting more research into the effects of GUI layout is a way I see resolving this. Also having the site tested by other users will help reasoning why elements are designed the way they are.
+          <br><br>
+          <h3> Time management</h3>
+<br>
+         
+          As usual I completely failed to manage my time to work on the project and landed up doing a large portion of the work on the day of submission. This problem needs to be rectified for the exam submission for this and other subjects. What I have found that can help me are time sheets. These time sheets would then be handed in so that there is motivation to keep working and updating them.
+          Working an hour to two per day would be sufficient to stop these crunching hours. 
+          
+
+        </p>
+    </article>
+<!-- Navigation buttons -->
+
+<!--console-->
+
+
+ <!-- Draggable DIV -->
+ <div id="mydiv" style="display: none;">
+    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+    <span onclick="this.parentElement.style.display='none'"class="w3-button w3-black w3-hover-red w3-large w3-display-topright">x</span>
+    <div id="mydivheader">Click here to move</div>
+
+
+    <!--console content-->
+    <div id="displayField">
+        <p id="consolContent">Type "help" for more commands</p>
+    </div>
+
+    <!--inputbox-->
+
+    <button id="button">Button</button>
+    
+    <form id="inputField">
+  
+        <input id = "myInput" type="text" name="fname" id="fname">
+        
+    </form>
+</div>  
+<!--console end-->
+
+
+<script src="../js/terminal2.js"></script>
+<script src="../js/movePanel.js"></script>
+</body>
+</html> 

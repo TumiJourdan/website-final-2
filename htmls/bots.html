@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../CSS/styleParent.css">
+    <link rel="stylesheet" href="../CSS/styleWritings.css">
+    <link rel="stylesheet" href="../CSS/styleConsole.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&family=Press+Start+2P&family=Roboto:ital,wght@0,400;1,100&family=Sora:wght@500&family=VT323&display=swap" rel="stylesheet"> 
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4eebd97972.js" crossorigin="anonymous"></script>
+
+    <script src="js/javaScript.js"></script>
+</head>
+
+<body>
+    <header>
+      
+        <nav>
+            <h1> <div id="output">Bots</div></h1>
+
+            <input type="checkbox" id ="check">
+            <label for="check" class="burgerButton"> <i class="fa-solid fa-bars"></i></label>
+            <ul>
+                <li>
+                    <button class="navBtn u-link navBtnConsole" onclick="displayConsole()" >Console</button>
+                    <a href="../index.html" class="navBtn">Home</a>
+                    <a href="projects.html" class="navBtn">Portfolio</a>
+                    <div class="dropdown">
+                        <a href="blog.html" class="navBtn dropbtn">Blog</a>
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="bots.html">Bots</a>
+                          <a href="browser.html">Browser</a>
+                          <a href="hypertext.html">Hypertext</a>
+                          <a href="justiceDesign.html">Justice in Design</a>
+                          <a href="geographies.html">Information access geographies</a>
+                          <a href="uiux.html"> Analysis on UI UX</a>
+                          <a href="reflection.html">Reflection</a>
+                        </div>
+                    <a href="designJurnal.html"class="navBtn">Design</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article class="h-entry">
+        <h2 class="p-name">A reflection of the history of internet bots.</h2>
+        <p class="e-content"> 
+          <h3> What is a bot</h3> 
+                <p>
+                    A bot is a software program that can interact with the internet. These interactions are generally simple and are repeated rapidly.
+
+                    There are three main types of bots to know when reviewing bots. Chatbots, Webcrawlers and Malicious bots. Chatbots are bots with the explicit purpose of interacting with the user. They are used to give quick responses, e.g the weather, welcoming a user to a server or for customer care.
+                    Webcrawlers also known as spiders, quickly scan through websites and index them. 
+                    The search engine then uses this data to display appropriate results to the user. Malicious bots is a broad term that covers any and all bots made with malicious intent; 
+                    for example: botnets, DDos, clickbots and spam bots.
+                </p>
+               
+
+                <h3>A confounded mess</h3>
+
+                In this history I will be covering the three aforementioned bots, there are many more types of bots, and experimental projects that can be covered, but they tend to less relevant/impactful on our lives unlike the 3 mentioned types.
+                <br>
+                <br>
+                This is a reflection on the history of bots and not a summary of the history. Keeping this in mind I will not be dating events or describing time lines. The gist of the development of bots is that they started as early as the 1960s and are still evolving today. Like any piece of software, they are tools made for the person’s own need. That need can be keeping a server active, creating artificial traffic, making surfing the internet easier, DDOS etc. Bots are programs and have no intent, but humans have learned and created new ways to use bots throughout the years.
+                <br>
+                <br>
+                The danger of bots is peoples lack of knowledge regarding them. Bots have existed for a long time used to evidently be helping /undermining. But recently bots can manipulate and help the user, and the users are non the wiser about it. This unseen interaction is in my opinion the blossoming danger of bots. Manipulating search results, creating an artificial following to retweeting someone’s opinions. This reminds me greatly of the “Medium is a Message” and bots are a medium. The text covers the effects of a medium on the ignorant. And I think this is extremely relevant to how bots can be used as a stealthy tool to influence the human mind.
+                <br>
+                <br>
+                But not like any of this is new news. Bots are merely a tool that is exacerbating this (may they be good, such as better search results, used for personal gain through game bots farming money and manipulating people through click bots/retweet bots).
+                <br>
+                <br>
+                Note to Hanli: I am struggling discerning a piece reflecting on the impact of bots versus a piece reflecting on the history of bots. I know that my critical writing piece is short, but most of my time was spent with my brain running in circles, like :
+                Should I cover the creations of each type of bot, when and how they were used. But then that is not a reflection but just a summary of their history.
+                Then shall I give my opinion on how bots have been used and their impacts on people. Well that is just a piece reflecting on the impact of bots and not the history.
+                <br>
+                <br>
+                Bibliography
+                <br>
+                <a href="https://abusix.com/resources/botnets/a-brief-history-of-bots-and-how-theyve-shaped-the-internet-today"> https://abusix.com/resources/botnets/a-brief-history-of-bots-and-how-theyve-shaped-the-internet-today</a>
+                <a href="https://onlim.com/en/the-history-of-chatbots/">https://onlim.com/en/the-history-of-chatbots/</a>
+                <a href="https://www.cits.ucsb.edu/fake-news/spread">https://www.cits.ucsb.edu/fake-news/spread</a>
+                <a href="https://www.nature.com/articles/s42005-020-0340-4">https://www.nature.com/articles/s42005-020-0340-4</a>
+
+        </p>
+    </article>
+<!-- Navigation buttons -->
+
+<!--console-->
+
+
+ <!-- Draggable DIV -->
+ <div id="mydiv" style="display: none;">
+    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+    <span onclick="this.parentElement.style.display='none'"class="w3-button w3-black w3-hover-red w3-large w3-display-topright">x</span>
+    <div id="mydivheader">Click here to move</div>
+
+
+    <!--console content-->
+    <div id="displayField">
+        <p id="consolContent">Type "help" for more commands</p>
+    </div>
+
+    <!--inputbox-->
+
+    <button id="button">Button</button>
+    
+    <form id="inputField">
+  
+        <input id = "myInput" type="text" name="fname" id="fname">
+        
+    </form>
+</div>  
+<!--console end-->
+
+
+<script src="../js/terminal2.js"></script>
+<script src="../js/movePanel.js"></script>
+</body>
+</html> 

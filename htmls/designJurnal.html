@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../CSS/styleParent.css">
+    <link rel="stylesheet" href="../CSS/styledesign">
+    <link rel="stylesheet" href="../CSS/styleWritings.css">
+    <link rel="stylesheet" href="../CSS/styleConsole.css">
+    <link rel="stylesheet" href="CSS/sphere.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&family=Press+Start+2P&family=Roboto:ital,wght@0,400;1,100&family=Sora:wght@500&family=VT323&display=swap" rel="stylesheet"> 
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4eebd97972.js" crossorigin="anonymous"></script>
+
+    <script src="../js/javaScript.js"></script>
+</head>
+
+<body>
+    <header>
+     
+        <nav>
+            <h1> <div id="output">Design</div></h1>
+
+            <input type="checkbox" id ="check">
+            <label for="check" class="burgerButton"> <i class="fa-solid fa-bars"></i></label>
+            <ul>
+                <li>
+                    <button class="navBtn u-link navBtnConsole" onclick="displayConsole()" >Console</button>
+                    <a href="../index.html" class="navBtn">Home</a>
+                    <a href="projects.html" class="navBtn">Portfolio</a>
+                    <a href="blog.html" class="navBtn">Blog</a>
+                    <a href="designJurnal.html"class="navBtn">Design</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="imageHolder">
+        <embed src="../pdfs/Assignment 2 design journal.pdf" width="800px" height="2100px" />
+        <h2>Assignment 1 design journal</h2>
+        <div></div>
+        <img src="../Website/1.jpg" class = "image" id = "image1"alt="page1">
+        <img src="../Website/2.jpg" class = "image" id = "image2"alt="page2">
+        <img src="../Website/3.jpg" class = "image" id = "image3"alt="page3">
+        <img src="../Website/4.jpg" class = "image" id = "image4"alt="page4">
+        <img src="../Website/5.jpg" class = "image" id = "image5"alt="page5">
+
+        <img src="../Website/7.jpg" class = "image" id = "image6"alt="page6">
+        <img src="../Website/8.jpg" class = "image" id = "image7"alt="page7">
+        <img src="../Website/9.jpg" class = "image" id = "image8"alt="page8">
+        <img src="../Website/10.jpg"class = "image" id = "image9" alt="page9">
+        <img src="../Website/11.jpg"class = "image" id = "image10" alt="page10">
+        
+    </main>
+
+<!--<h3>Example 1</h3>
+    <div class="quote">
+    We went <span data-spell="about" data-original="asdfa"></span> our <span data-spell="business" data-original="1!!#$@"></span>.
+    </div>
+<div id="output"></div>-->
+
+<!--console-->
+
+
+ <!-- Draggable DIV -->
+ <div id="mydiv" style="display: none;">
+    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+    <span onclick="this.parentElement.style.display='none'"class="w3-button w3-black w3-hover-red w3-large w3-display-topright">x</span>
+    <div id="mydivheader">Click here to move</div>
+
+
+    <!--console content-->
+    <div id="displayField">
+        <p id="consolContent">Type "help" for more commands</p>
+    </div>
+
+    <!--inputbox-->
+
+    <button id="button">Button</button>
+    
+    <form id="inputField">
+  
+        <input id = "myInput" type="text" name="fname" id="fname">
+        
+    </form>
+</div>  
+<!--console end-->
+
+
+<script src="../js/lazyload.js"></script>
+<script src="../js/terminal2.js"></script>
+<script src="../js/movePanel.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+<script src="../js/sphere.js"></script>
+</body>
+</html> 

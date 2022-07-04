@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../CSS/styleParent.css">
+    <link rel="stylesheet" href="../CSS/styleWritings.css">
+    <link rel="stylesheet" href="../CSS/styleConsole.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&family=Press+Start+2P&family=Roboto:ital,wght@0,400;1,100&family=Sora:wght@500&family=VT323&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4eebd97972.js" crossorigin="anonymous"></script>
+
+    <script src="../js/javaScript.js"></script>
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <h1> <div id="output">Browser</div></h1>
+
+            <input type="checkbox" id ="check">
+
+            <label for="check" class="burgerButton"> <i class="fa-solid fa-bars"></i></label>
+            <ul>
+                <li>
+                    <button class="navBtn u-link navBtnConsole" onclick="displayConsole()" >Console</button>
+                    <a href="../index.html" class="navBtn">Home</a>
+                    <a href="projects.html" class="navBtn">Portfolio</a>
+                    <div class="dropdown">
+                        <a href="blog.html" class="navBtn dropbtn">Blog</a>
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="bots.html">Bots</a>
+                          <a href="browser.html">Browser</a>
+                          <a href="hypertext.html">Hypertext</a>
+                          <a href="justiceDesign.html">Justice in Design</a>
+                          <a href="geographies.html">Information access geographies</a>
+                          <a href="uiux.html"> Analysis on UI UX</a>
+                          <a href="reflection.html">Reflection</a>
+                        </div>
+                    <a href="designJurnal.html"class="navBtn">Design</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="h-entry">
+            <h2 class="p-name">What is a browser?</h2>
+            <p class="e-content"> 
+              <h3></h3> 
+    
+              To understand what a browser is, I have decided to investigate how a browser works.
+                <br>
+                <br>
+
+     
+              The browser interacts with 4 different parties: the client, DNS and server
+              The client is the user's computer. The Server is where the information regarding the website is stored. The Domain Name Server (DNS) routes the client to the correct server based on the domain name entered.
+              <br>
+                <br>
+               
+              
+              The order of operations that the web browser executes to access a web page are the following:
+              <br>
+                <br>
+              The user enters a domain name. The web browser then sends the domain name to the DNS. The DNS then establishes the connection between the server and the client over TCP (Transfer Control Protocol). After the connection is made to the port in the server. The browser then sends an HTTP request to receive the website. The server sends code in HTML, CSS, JAVA etc, and the server is then built client side. This saves time as the browser building the website is much faster than downloading it. The browser, using its cache can save many parts of this process to save time in return visits to websites.
+              <br>
+                <br>
+               
+              
+              From this process the definition of a browser: a browser is a program that gives the user a GUI to interface with the world wide web and the websites therein, to do this it also creates a connection with the server and builds the website.
+              
+              <br>
+              <br>
+              
+              The only use is not only for the user but is also beneficial to companies. At first web browsers were a paid service, and later the free model became more popular. The benefits of a free model are from 2 income streams. The first is by getting a cut from plugins, and the second is to create a product ecosystem. For example, when someone uses Chrome they are by default going to use the google search engine to find the webpage, this then feeds income through the advertising from the search engine. So, it is in googles’ interest for Chrome to do well because it means more clicks and more revenue. This ecosystem is much larger than the relationship between the browser and engine (e.g google drive, gmail, google sheets, etc) but the browser is in integral part as the company has more control over what services are readily available to the user ( for example, what services are set as default).
+              
+              <br>
+              <br>
+              
+              Bibliography:
+              <a href="https://www.youtube.com/watch?v=QzohDuGk4mM">https://www.youtube.com/watch?v=QzohDuGk4mM</a>
+              <a href="https://en.wikipedia.org/wiki/Web_browser">https://en.wikipedia.org/wiki/Web_browser</a>
+              
+             <a href="https://www.quora.com/How-does-the-business-of-web-browsers-work">https://www.quora.com/How-does-the-business-of-web-browsers-work</a>
+              
+            <a href="https://www.pcmag.com/news/30-years-of-browsers-a-quick-history">https://www.pcmag.com/news/30-years-of-browsers-a-quick-history</a>
+
+            </p>
+        </article>
+    
+    </main>
+    
+<!--<h3>Example 1</h3>
+    <div class="quote">
+    We went <span data-spell="about" data-original="asdfa"></span> our <span data-spell="business" data-original="1!!#$@"></span>.
+    </div>
+<div id="output"></div>-->
+
+<!--console-->
+
+
+ <!-- Draggable DIV -->
+ <div id="mydiv" style="display: none;">
+  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+  <span onclick="this.parentElement.style.display='none'"class="w3-button w3-black w3-hover-red w3-large w3-display-topright">x</span>
+  <div id="mydivheader">Click here to move</div>
+
+
+  <!--console content-->
+  <div id="displayField">
+      <p id="consolContent">Type "help" for more commands</p>
+  </div>
+
+  <!--inputbox-->
+
+  <button id="button">Button</button>
+  
+  <form id="inputField">
+
+      <input id = "myInput" type="text" name="fname" id="fname">
+      
+  </form>
+</div>  
+<!--console end-->
+
+
+<script src="../js/terminal2.js"></script>
+<script src="../js/movePanel.js"></script>
+</body>
+</html> 

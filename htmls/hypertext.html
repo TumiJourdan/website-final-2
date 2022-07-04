@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../CSS/styleParent.css">
+    <link rel="stylesheet" href="../CSS/styleWritings.css">
+    <link rel="stylesheet" href="../CSS/styleConsole.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&family=Press+Start+2P&family=Roboto:ital,wght@0,400;1,100&family=Sora:wght@500&family=VT323&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4eebd97972.js" crossorigin="anonymous"></script>
+
+    <script src="../js/javaScrip.js"></script>
+</head>
+
+<body>
+    <header>
+  
+        <nav>
+            <h1> <div id="output">Hypertext</div></h1>
+
+            <input type="checkbox" id ="check">
+            <label for="check" class="burgerButton"> <i class="fa-solid fa-bars"></i></label>
+            <ul>
+                <li>
+                    <button class="navBtn u-link navBtnConsole" onclick="displayConsole()" >Console</button>
+                    <a href="../index.html" class="navBtn">Home</a>
+                    <a href="projects.html" class="navBtn">Portfolio</a>
+                    <div class="dropdown">
+                        <a href="blog.html" class="navBtn dropbtn">Blog</a>
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="bots.html">Bots</a>
+                          <a href="browser.html">Browser</a>
+                          <a href="hypertext.html">Hypertext</a>
+                          <a href="justiceDesign.html">Justice in Design</a>
+                          <a href="geographies.html">Information access geographies</a>
+                          <a href="uiux.html"> Analysis on UI UX</a>
+                          <a href="reflection.html">Reflection</a>
+                          
+                        </div>
+                    <a href="designJurnal.html"class="navBtn">Design</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="h-entry">
+            <h2 class="p-name" >A reflection of “What Hypertext Is” written by Noah Warden-Fruin.
+                Tumi Jourdan
+                2180153</h2>
+            <p class="e-content"> 
+                The aim of the document is to answer the question “What is hypertext” in its own method.
+                <br>
+                <br>
+                 Noah Warden first covers how communities offer different answers to the question. These communities
+                are the literary and the computer science community. Noah recognises the effect of a community on
+                their definitions of the word and how each of their biased opinions of the definitions are valid.
+                Tangent -The elasticity of words will cause them to evade a singular meaning. Words are borrowed
+                and twisted to fit varying fields and times. The meaning is always valid if enough humans agree on a
+                meaning. The meaning is based in consensus. As to how many must agree for a meaning is
+                formalised is difficult. Words can have different meanings between cultures of billions of people, but
+                also just between two people. This tangent of my own thought leads me to critique the document:
+                merely asking “What is hypertext” is insufficient, and who ever wants to know what the meaning is
+                should also elaborate to which context do they seek the meaning. And the most thorough way to
+                answer such a general question would be to supply all possible meanings of the word, formal and
+                informal.
+                <br>
+                <br>
+                In attempt to create a better understanding of the word, Noah looks to the origin of it. Noah outlines
+                how Theodor Holm (“Ted”) Nelson first coined the term, along with the other terms; Hyperfilm and
+                Hypermedia. Nelson explains hypermedia as “Hyper-media are branching or performing
+                presentations which respond to user actions, systems of prearranged words and pictures (for
+                example) which may be explored freely or queried in stylized ways.” Using this and hyperlinks
+                Nelson explains hypertexts as “chunk style, hypertexts consist of separate pieces of text connected
+                by links.” And that hypertext is a hypermedia.
+                <br>
+                <br>
+                From the previous definitions Noah’s work culminates in the form of the definition :
+                “Hypertext is a term coined by Ted Nelson for forms of hypermedia (human-authored media that
+                branch or perform on request) that operate textually. Examples include the link-based ‘discrete
+                hypertext’ (of which the Web is one example) and the level-of-detail-based ‘stretchtext.’”.
+                Considering the path of definition that Noah had made, I consider this accurate. It may not
+                encompass every meaning of the word ‘Hypertext’, but it fulfils the standards he had set for the
+                definition.
+                <br>
+                <br>
+                What does hypertext mean to me? Well, every definition that can be found is valid in my opinion.
+                A note to Hanli Geyser, or whomever is reading this.
+                I feel like I have gone too far in a peculiar direction and started talking less about what hyper text is
+                and rather the methodology/reasoning that the author utilises to find the conclusion of the piece of
+                work. The reason I found is that the author had already described the term ‘Hypertext’ very well and
+                if I wanted to explain it myself, this whole text could have been just a reference to Noah’s work.</p>
+        </article>
+    
+    </main>
+    
+<!--<h3>Example 1</h3>
+    <div class="quote">
+    We went <span data-spell="about" data-original="asdfa"></span> our <span data-spell="business" data-original="1!!#$@"></span>.
+    </div>
+<div id="output"></div>-->
+
+<!--console-->
+
+
+ <!-- Draggable DIV -->
+ <div id="mydiv" style="display: none;">
+    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+    <span onclick="this.parentElement.style.display='none'"class="w3-button w3-black w3-hover-red w3-large w3-display-topright">x</span>
+    <div id="mydivheader">Click here to move</div>
+
+
+    <!--console content-->
+    <div id="displayField">
+        <p id="consolContent">Type "help" for more commands</p>
+    </div>
+
+    <!--inputbox-->
+
+    <button id="button">Button</button>
+    
+    <form id="inputField">
+  
+        <input id = "myInput" type="text" name="fname" id="fname">
+        
+    </form>
+</div>  
+<!--console end-->
+
+
+<script src="../js/terminal2.js"></script>
+<script src="../js/movePanel.js"></script>
+</body>
+</html> 
